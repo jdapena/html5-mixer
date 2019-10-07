@@ -1,5 +1,6 @@
 import Mustache from 'mustache';
-import { init as init_sliders } from './sliders';
+import { audiomixer } from 'agl-js-api';
+import { setValue } from './sliders';
 
 var template;
 
@@ -15,15 +16,24 @@ export function init() {
     template = document.getElementById('slider-template').innerHTML;
     Mustache.parse(template);
 
-    var sliders =  [];
-    for( var i=0; i<10; i++) {
-        sliders.push({
-            id: i,
-            name: 'Volume '+i,
-            value: Math.floor(Math.random()*100)
-        });
-    }
+    audiomixer.list_controls().then(function(result) {
+        var sliders =  [];
+       for( var i=0; i<result.length; i++) {
+            sliders.push({
+                id: result[i].control,
+                name: result[i].control,
+                value: Math.floor(result[i].volume*100)
+            });
+        }
 
-    init_sliders(sliders);
-    render_sliders(sliders);
+        render_sliders(sliders);
+    }).catch(function(error) {
+        console.error('ERROR loading sliders', error);
+    });
+
+    audiomixer.on_volume_changed(function(data){
+        setValue(document.getElementById("slider-"+data.control), Math.ceil(data.value*100), true);
+    }).then(function(result) {
+        console.log("SUBSCRIBED TO VOLUME CHANGED");
+    });
 }

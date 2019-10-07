@@ -15,12 +15,12 @@
  */
 
 /* JS */
-import './js/AFB.js';
 import { init } from './js/app';
 import { increase, decrease, change } from './js/sliders';
 
 /* CSS */
 import './styles/app.scss';
+
 
 window.increase = increase;
 window.decrease = decrease;
