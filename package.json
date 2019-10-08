@@ -37,6 +37,6 @@
     },
     "dependencies": {
         "mustache": "^3.1.0",
-        "agl-js-api": "0.0.0"
+        "agl-js-api": "git@bitbucket.org:smarsol/agl-js-api.git#master"
     }
 }
