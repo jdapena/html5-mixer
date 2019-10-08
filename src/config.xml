@@ -18,5 +18,6 @@
     <param name="windowmanager" value="ws" />
     <param name="homescreen" value="ws" />
     <param name="afm-main" value="ws" />
+    <param name="audiomixer" value="ws" />
   </feature>
 </widget>
