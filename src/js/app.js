@@ -1,5 +1,5 @@
 import Mustache from 'mustache';
-import { audiomixer } from 'agl-js-api';
+import { audiomixer, api } from 'agl-js-api';
 import { setValue } from './sliders';
 
 var template;
@@ -13,6 +13,7 @@ function render_sliders(sliders) {
 }
 
 export function init() {
+    api.init();
     template = document.getElementById('slider-template').innerHTML;
     Mustache.parse(template);
 
