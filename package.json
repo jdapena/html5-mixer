@@ -7,11 +7,10 @@
         "build": "webpack",
         "start": "webpack-dev-server"
     },
-    "homepage": "https://bitbucket.org/smarsol/mixer",
-    "author": "humberto.alfonso@asvito.es",
+    "homepage": "https://github.com/AGL-web-applications/mixer",
     "repository": {
         "type": "git",
-        "url": "git@bitbucket.org:smarsol/mixer.git"
+        "url": "git@github.com:AGL-web-applications/mixer.git"
     },
     "keywords": [
         "agl",
@@ -37,6 +36,6 @@
     },
     "dependencies": {
         "mustache": "^3.1.0",
-        "agl-js-api": "git@bitbucket.org:smarsol/agl-js-api.git#master"
+        "agl-js-api": "https://github.com/AGL-web-applications/agl-js-api.git#master"
     }
 }
