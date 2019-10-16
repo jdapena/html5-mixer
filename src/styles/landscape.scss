@@ -5,16 +5,13 @@
     }
 
     body {
-
-        .center {
-            width: 80%;
-            float: left;
+        .content {
+            .sliderContainer {
+                flex-direction: row;
+                .entry {
+                    flex: 50%;
+                }
+            }
         }
-
-        .bottom {
-            flex-direction: column;
-            width: 20%;
-        }
-
     }
 }

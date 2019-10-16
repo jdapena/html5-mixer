@@ -90,38 +90,46 @@ body {
     }
 
     .content {
+        height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
-        height: 100%;
+        flex-wrap: nowrap;
 
         .header {
             text-align: center;
             margin: 0;
         }
 
-        .entry {
-            height: 120px;
+        .sliderContainer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
 
-            .label {
-                margin: 10px 0;
-            }
+            .entry {
+                height: 120px;
 
-            .button {
-                width: 10%;
-                position: relative;
-                float: left;
-                text-align: center;
-                height: 80px;
-                line-height: 80px;
-            }
+                .label {
+                    margin: 10px 0;
+                }
 
-            .slider {
-                width: 78%;
-                position: relative;
-                float: left;
-                margin: 0 1%;
+                .button {
+                    width: 10%;
+                    position: relative;
+                    float: left;
+                    text-align: center;
+                    height: 80px;
+                    line-height: 80px;
+                }
+
+                .slider {
+                    width: 78%;
+                    position: relative;
+                    float: left;
+                    margin: 0 1%;
+                }
             }
         }
     }
