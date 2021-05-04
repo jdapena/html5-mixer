@@ -53,6 +53,13 @@ html {
     height: 100%;
     background-size: cover;
     -webkit-overflow-scrolling: touch;
+    user-select: none;
+}
+
+img {
+    user-select: none !important;
+    touch-action: none;
+    pointer-events: none;
 }
 
 body {
