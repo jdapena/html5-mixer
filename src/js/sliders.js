@@ -1,4 +1,4 @@
-import { audiomixer } from 'agl-js-api';
+import * as audiomixer from './agl_stubs_audiomixer';
 
 function getRootNode(node) {
     while(!node.hasAttribute('slider-id') && node.parentNode) {
