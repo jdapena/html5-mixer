@@ -1,16 +1,16 @@
 {
     "name": "agl-mixer",
     "version": "0.0.0",
-    "description": "HVAC project for AGL based on html5 technologies",
+    "description": "Mixer for AGL based on html5 technologies",
     "scripts": {
         "webpack": "webpack",
         "build": "webpack",
         "start": "webpack-dev-server"
     },
-    "homepage": "https://github.com/AGL-web-applications/mixer",
+    "homepage": "https://git.automotivelinux.org/apps/html5-mixer",
     "repository": {
         "type": "git",
-        "url": "git@github.com:AGL-web-applications/mixer.git"
+        "url": "https://gerrit.automotivelinux.org/gerrit/apps/html5-mixer"
     },
     "keywords": [
         "agl",
